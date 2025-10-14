@@ -75,4 +75,15 @@ class LibraryController extends Controller
 
     }
 
+    public function actionIndex()
+    {
+        $query = Book::find();
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        return $this->render('index', ['dataProvider' => $dataProvider]);
+
+    }
+
 }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @var $sort
+ * @var $dataProvider
  */
 
 ?>
